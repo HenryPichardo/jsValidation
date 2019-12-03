@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jsValidation</title>
+    <script src="js/javascript.js"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Formulario de Registro<br> Practica 4 <br> Validacion Javascript</h1>
+                <form name="myForm" class="" action="Index.html" autocomplete="on" method="POST">
+                    <fieldset>
+                        <legend>Formulario Practica 1</legend>
+                        <b>Nombre:<br></b>
+                        <input autofocus type="text" required name="fname" value="" minlength="5" maxlength="10"><br> <b>Cedula:</b>
+                        <br>
+                        <input maxlength="11" minlength="11" type="text" name="cedula" value="" required><br><br><b> Direccion:</b>
+                        <br>
+                        <textarea minlength="30" maxlength="50" name="" id="" cols="30" rows="10" required></textarea>
+                        <br><br> <b>Sexo:</b>
+                        <br>
+                        <select name="sexo" required>
+                                        <option value="">Elija una Opcion</option>
+                                        <option value="">Hombre</option>
+                                        <option value="">Mujer</option>
+                                        <option value="">Otro</option>
+                                       
+                                      </select><br><br>
+
+                        <!-- <label for="sexo">Sexo</label><br>
+                        <input type="radio" name="gender" value="male" checked> Masculino<br>
+                        <input type="radio" name="gender" value="female"> Femenino<br>
+                        <input type="radio" name="gender" value="other"> Otro -->
+
+                        <br><br>
+                        <label for="Nacimiento">Lugar de Nacimiento</label>
+                        <select name="Ciudad" required>
+                                        <option value="">Elija una Opcion</option>
+                                        <option value="">Barahona</option>
+                                        <option value="">Neyba</option>
+                                        <option value="">Azua</option>
+                                        <option value="">Pedernales</option>
+                                      </select><br><br>
+                        <!-- <label for="Sangre">Tipo de Sangre</label>
+                        <select name="Sangre" required>
+                                        <option value="">B+</option>
+                                        <option value="">B-</option>
+                                        <option value="">O+</option>
+                                        <option value="">O-</option>
+                                      </select><br><br> Firma:
+                        <br> -->
+                        <!-- <input type="checkbox" name="" id="">Opcion1<br>
+                        <input type="checkbox" name="" id="">Opcion2<br>
+                        <input type="checkbox" name="" id="">Opcion3<br><br> -->
+
+                        <input class="btn-primary btn-lg" type="submit" value="ENVIAR" onclick="validateForm()"> <input class="btn-lg btn-warning" type="reset" value="RESET"> <input class="btn-danger btn-lg" type="button" value="CANCELAR">
+
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
